@@ -1,20 +1,12 @@
 # @chat/monorepo
 
-To reuse this monorepo, replace `chat` and run yarn on the root project.
+SocketIO chat application written to be cross platform first - and to try out SocketIO. 
 
 ### UI
 
 Desktop                    |  Desktop (Dark)
 :-------------------------:|:-------------------------:
-![App web page.](./docs/images/web--light-mode.png) | ![App web page (dark).](./docs/images/web--dark-mode.png)
-
-Mobile                     |  Mobile (Dark)
-:-------------------------:|:-------------------------:
-![Mobile screen.](./docs/images/app--light-mode.png) | ![Mobile screen (dark).](./docs/images/app--dark-mode.png)
-
-Mobile Settings (Dark)     |
-:-------------------------:|
-![Mobile Setting screen (dark).](./docs/images/app__settings--dark-mode.png) |
+![Chat web page.](./docs/images/web--light-mode.png) | ![Chat web page (dark).](./docs/images/web--dark-mode.png)
 
 ## Setup:
 
