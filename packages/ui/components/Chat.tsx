@@ -46,6 +46,7 @@ export const Chat = () => {
 
   const sendMessage = () => {
     if (socketRef.current == null) throw new Error("Socket not initialized");
+    // @TODO: add empty message alert to chat
     if (message === "") return;
 
     const socket = socketRef.current;
@@ -59,14 +60,14 @@ export const Chat = () => {
   };
 
   return (
-    <View style={[styles.container]}>
+    <View style={[styles.container, themeStyles.mediumContainer]}>
       <View style={[styles.chatContainer]}>
         {messages.map(({ user, message }, index) => {
           return <ChatMessage key={index} user={user} message={message} />;
         })}
       </View>
 
-      <View style={[styles.messageContainer]}>
+      <View style={[styles.messageContainer, themeStyles.lightContainer]}>
         <TextInput
           style={[styles.messageInput, themeStyles.text]}
           onChangeText={setMessage}
@@ -89,7 +90,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     height: "600px",
     width: "100%",
-    backgroundColor: "#1F1F1F",
   },
   chatContainer: {
     padding: 15,
@@ -101,7 +101,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     margin: 10,
     padding: 10,
-    backgroundColor: "#2F2F2F",
   },
   messageInput: {
     flexGrow: 1,
