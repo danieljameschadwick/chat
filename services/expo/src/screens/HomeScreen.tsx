@@ -1,7 +1,6 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import { getTheme } from "@chat/theme/utils/theme";
-import { SharedComponentExample } from "@chat/ui/components/SharedComponentExample";
 
 export const HomeScreen: React.FC = () => {
   const themeStyles = getTheme();
@@ -20,7 +19,7 @@ export const HomeScreen: React.FC = () => {
 
   return (
     <View style={[styles.container, themeStyles.container]}>
-      <SharedComponentExample />
+      <Text>{"@TODO"}</Text>
     </View>
   );
 };

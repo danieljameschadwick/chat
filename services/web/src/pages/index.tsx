@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native-web";
 import StyleSheet from "react-native-media-query";
-import { SharedComponentExample } from "@chat/ui/components/SharedComponentExample";
 import { Header } from "@src/components/layout/header/Header";
 import { FluidPageContent } from "@src/components/layout/FluidPageContent";
+import { Chat } from "@chat/ui/components/Chat";
 
 const Index: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Index: React.FC = () => {
           style={[styles.pageContainer]}
           dataSet={{ media: ids.pageContainer }}
         >
-          <SharedComponentExample />
+          <Chat />
         </View>
       </FluidPageContent>
     </View>
