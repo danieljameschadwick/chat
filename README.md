@@ -6,7 +6,7 @@ SocketIO chat application written to be cross platform first - and to try out So
 
 Desktop                    |  Desktop (Dark)
 :-------------------------:|:-------------------------:
-![Chat web page.](./docs/images/web--light-mode.png) | ![Chat web page (dark).](./docs/images/web--dark-mode.png)
+![Chat web page.](./docs/images/web--light-mode.png) | ![Chat web page (dark).](./docs/images/web--dark-mode.png.png)
 
 ## Setup:
 
